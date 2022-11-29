@@ -1,0 +1,10 @@
+<div>
+  <label>☎️{{ label }}</label>
+  <input
+    [disabled]="disabled"
+    [value]="value"
+    (change)="handleOnChange($event)"
+    (focus)="handleOnFocus()"
+    type="text"
+  />
+</div>

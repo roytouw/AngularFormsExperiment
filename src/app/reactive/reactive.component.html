@@ -1,0 +1,22 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="reactiveSubmit()">
+    <p>
+      <label>First name:</label
+      ><input type="text" formControlName="firstName" />
+    </p>
+
+    <p>
+      <label>Last name:</label>
+      <input type="text" formControlName="lastName" />
+    </p>
+
+    <p>
+      <app-custom-input
+        [label]="'telephone'"
+        formControlName="telephone"
+      ></app-custom-input>
+    </p>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
